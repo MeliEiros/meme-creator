@@ -1,17 +1,41 @@
-.tittle {
+.title {
     text-align: center;
     font-size: 40px;
-    background-color: rgb(14, 14, 16);
+    background-color: rgb(81, 81, 240);
 }
 .three-buttons {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(81, 81, 240) ;
+}
+.button-img {
+    background-color:  rgb(81, 81, 240);
+}
+.button-img:hover { 
+    background-color: blueviolet;
+}
+.button-text { 
+    background-color: rgb(81, 81, 240);
+}
+.button-text:hover { 
+    background-color: blueviolet;
+}
+.button-mood { 
+    background-color: rgb(81, 81, 240);
+}
+.button-mood:hover { 
+    background-color: blueviolet;
 }
 .panel-title {
     text-align: center;
 }
-
+.meme-img { 
+    background-color: aqua;
+}
+.img-meme { 
+    text-align: center;
+    font-size: 20px;
+}
 .panel { 
     background-color: brown;
     width:200px;
