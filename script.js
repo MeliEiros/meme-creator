@@ -1,0 +1,1 @@
+const aside = document.getElementById ('panel')

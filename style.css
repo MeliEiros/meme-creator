@@ -38,10 +38,8 @@
 }
 .panel { 
     background-color: brown;
-    width:200px;
-    
-
-    
+    width:220px;
+    display: block;
 }
 .control-panel { 
     margin: 20px;
