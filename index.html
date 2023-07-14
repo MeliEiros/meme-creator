@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css"> 
     <script src="https://kit.fontawesome.com/feae6c3d99.js" crossorigin="anonymous"></script>
     </head>
-<header> 
-        <h1 class="title"> GENERADOR DE MEMES </h1>
-    <div class="three-buttons">
-        <button id="img-button"  class="button-img"> <i class="fa-solid fa-file-image"></i> Imagen </button>
-        <button id="text-button" class="button-text"> <i class="fa-solid fa-font"></i> Texto </button>
-        <button id="mood-button" class="button-mood"> <i class="fa-solid fa-lightbulb"></i> Modo oscuro </button>
+<header>
+      <h1 class="title"> GENERADOR DE MEMES </h1>
+     <div class="three-buttons"> 
+       <div class="img-b"> <button id="img-button"  class="button-img"> <i class="fa-solid fa-file-image"></i> Imagen </button> </div>
+        <div class="boton"> <button id="text-button" class="button-text"> <i class="fa-solid fa-font"></i> Texto </button> </div>
+        <div class="mood"> <button id="mood-button" class="button-mood"> <i class="fa-solid fa-lightbulb"></i> Modo oscuro </button> </div>
     </div>
 </header>
 <body>
@@ -109,9 +109,16 @@
                 <option value="Impact" selected> Impact </option>
                 <option value="Verdana"> Verdana </option>
                 <option value="Times New Roman"> Times New Roman </option>
-            </select>
-            <div class="text-container"> 
-                
+            </select> 
+        </br>
+                <div class="text-size"> 
+                    <input id="text-size-input" class="panel-control-input" type="number" min="12" value="40">
+                </div>
+                <div class="positions-text">
+                    <button id="text-left" class="left-text"> </button>
+                    <button id="text-center" class="center-text"> </button>
+                    <button id="text-right" class="right-text"> </button>
+                </div>
             </div>
 
 </div>

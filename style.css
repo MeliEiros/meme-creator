@@ -8,6 +8,16 @@
     justify-content: center;
     background-color: rgb(81, 81, 240) ;
 }
+.img-b{ 
+    margin: 10px;
+    
+}
+.boton { 
+    margin: 10px;
+}
+.mood { 
+    margin: 10px;
+}
 .button-img {
     background-color:  rgb(81, 81, 240);
 }
@@ -37,6 +47,8 @@
     font-size: 40px;
     margin: 10px;
 }
+
+
 .imagen { 
     background-color: black;
     height: 500px;
@@ -80,4 +92,15 @@
     width: 85px;
     margin: 50px;
     font-size: 15px;
+}
+.text-size { 
+    display: flex;
+}
+.panel-control-input { 
+    height: 25px;
+}
+.positions-text { 
+    display: flex;
+    height: 20px;
+    
 }
