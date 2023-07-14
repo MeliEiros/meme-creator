@@ -26,11 +26,40 @@
 .button-mood:hover { 
     background-color: blueviolet;
 }
+
+.top-text { 
+    background-color: antiquewhite;
+    height: 70px;
+    text-align: center;
+    padding: 35px 50px;
+}
+.text-top { 
+    font-size: 40px;
+    margin: 10px;
+}
+.imagen { 
+    background-color: black;
+    height: 500px;
+}
+.bottom-text { 
+    background-color: antiquewhite;
+    height: 70px;
+    text-align: center;
+    padding: 35px 50px;
+} 
+.text-bottom { 
+    font-size: 40px;
+    margin: 10px;
+}
 .panel-title {
     text-align: center;
 }
 .meme-img { 
     background-color: aqua;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+    
 }
 .img-meme { 
     text-align: center;
@@ -40,6 +69,7 @@
     background-color: brown;
     width:220px;
     display: block;
+    float: inline-end;
 }
 .control-panel { 
     margin: 20px;
