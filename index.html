@@ -120,9 +120,33 @@
                     <button id="text-right" class="right-text"><i class="fa-solid fa-align-right"></i> </button>
                 </div>
             </div>
-            <div class="panel-control-color"> 
-                <h3 class="panel-control-title"> COLOR </h3>
+            <div class="panel-control-color">
+                 <div> <h3 class="panel-control-title"> COLOR </h3>
+                 <input id="text-color-input" class="color-input" name="color texto" type="color" value="#000000"> </div>
+                <div> <h3 class="panel-control-title"> FONDO </h3>
+                <input id="backgroundcolor-text" class="color-input" name="color de fondo" type="color" value="#FFFFFF"> </div> 
 
+            </div>
+            <div class="panel-control">
+                <h3 class="panel-control-title"> CONTORNO </h3>
+                <button id="outline-button" class="button-default"> Ninguno </button>
+                <button id="light-button" class="button-default"> Claro </button>
+                <button id="dark-button"  class="button-default"> Oscuro </button>
+            </div>
+            <div class="panel-control"> 
+                <h3 class="panel-control-title"> Espaciado </h3>
+                <input id="padding-input" class="panel-control-input" min="10" max="50" value="35"> 
+            </div>
+            <div class="panel-control"> 
+                <h3 class="panel-control-title"> INTERDELINEADO </h3>
+                <select id="line-input" class="panel-control-input">
+                    <option value="0.8"> 0.8</option>
+                    <option value="1"> 1 </option>
+                    <option value="1.2" selected> 1.2</option>
+                    <option value="1.5"> 1.5 </option>
+                    <option value="2"> 2 </option>
+                    <option value="2.5"> 2.5 </option>
+                </select>
             </div>
     </aside>
     <script src="scriptjs">

@@ -114,3 +114,11 @@
 .right-text:hover { 
     background-color: blue;
 }
+.color-input { 
+    border: 0;
+    background-color: transparent;
+}
+.panel-control-color { 
+    display: flex;
+    display: inline-block;
+}
