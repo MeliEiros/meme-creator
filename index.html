@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Generador de memes </title>
     <link rel="stylesheet" href="style.css"> 
     <script src="https://kit.fontawesome.com/feae6c3d99.js" crossorigin="anonymous"></script>
     </head>
@@ -20,13 +20,13 @@
         <div class="meme-img" style="height: 600px;">
         <!--<div id="text-img" class="img-text"> TOP TEXT </div> -->
         <div class="top-text"> <p class="text-top"> TOP TEXT </p> </div>
-        <div class="imagen"> </div>
+        <div class="imagen" id="container-meme"> </div>
         <div class="bottom-text"> <p class="text-bottom"> BOTTOM TEXT</p>  </div>
         </div>
 
 
      </main>
-    <aside id="panel" class="panel"> 
+    <aside id="panel-hidden" class="panel-hidden"> 
         <h2 class="panel-title"> IMAGEN </h2>
         <div class="control-panel"> 
             <h3 class="panel-control-title"> URL </h3>
@@ -81,7 +81,7 @@
         </div>
         <button id="button-filters" class="button-filters"> Restablecer filtros </button>
     </aside>
-    <aside id="panel" class="panel"> 
+    <aside id="panel" class="panel-hidden"> 
         <h2 class="title-panel"> TEXTO </h2>
         <div class="panel-control"> 
             <h3 class="title-panel"> SUPERIOR </h3>
