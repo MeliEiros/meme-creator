@@ -14,5 +14,8 @@ UrlImgInput.addEventListener('input', (e)=> changeBackground(e))
 
 const changeBackground =(e) => { 
     console.log(e.target.value)
-    memeImg.style.backgroundImage = `url("${UrlImgInput.value}"`;     //'url(' ${e.target.value}')'// 
-}) 
+    memeImg.style.backgroundImage = `url(' ${e.target.value}')`
+} 
+
+const button = document.getElementById('mood-button')
+const mainContainer =document.getElementById('main-container')

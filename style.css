@@ -87,7 +87,7 @@
     top: 0;
     right: 0;
 }
-.panel-hidden2 { 
+ /*.panel-hidden2 { 
     background-color: brown;
     width:220px;
     display: block;
@@ -96,7 +96,8 @@
     position: fixed;
     top: 0;
     right: 0;
-}
+    
+} */
 .control-panel { 
     margin: 20px;
 }
