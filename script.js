@@ -8,7 +8,7 @@ alert('hola')
 //const textAside = document.getElementById("panel-hidden");
 
 
-const urlImg = document.getElementById('url-img-input')
+const urlImg = document.getElementById ('url-img-input')
 const memeImg = document.getElementById('container-meme')
 UrlImgInput.addEventListener('input', (e)=> changeBackground(e))
 
@@ -18,4 +18,5 @@ const changeBackground =(e) => {
 } 
 
 const button = document.getElementById('mood-button')
-const mainContainer =document.getElementById('main-container')
+const mainContainer = document.getElementById('main-container')
+const headerContainer = document.getElementById('header-container')
