@@ -15,7 +15,7 @@
         <div class="mood"> <button id="mood-button" class="button-mood"> <i class="fa-solid fa-lightbulb"></i> Modo oscuro </button> </div>
     </div>
 </header>
-<body>
+<body id="body-light">
      <main id="main-container" class="container-meme"> 
         <div class="meme-img" style="height: 600px;">
         <!--<div id="text-img" class="img-text"> TOP TEXT </div> -->
@@ -26,7 +26,7 @@
 
 
      </main>
-    <aside id="panel-hidden" class="panel-hidden"> 
+    <aside id="aside-img" class="panel-hidden"> 
         <h2 class="panel-title"> IMAGEN </h2>
         <div class="control-panel"> 
             <h3 class="panel-control-title"> URL </h3>
@@ -35,53 +35,53 @@
         <div class="control-panel"> 
             <h3 class="filtros"> Filtros </h3>
             <div class="panel-control-slider"> 
-                <label for="brightness-slider"> BRILLO </label>
+                <label id="filtro-brillo" for="brightness-slider"> BRILLO </label>
             </br>
                 <input id="brightness-slider" type="range" min="0" max="1" value="1" step="0.1">
             </div>
             <div class="panel-control-slider"> 
-                <label for="slider-opacity"> OPACIDAD </label>
+                <label id="filtro-opac"  for="slider-opacity"> OPACIDAD </label>
             </br>
             <input id="slider-opacity" type="range" min="0" max="1" value="1" step="0.1">
             </div>
             <div class="panel-control-slider">
-                <label for="slider.contrast"> CONTRASTE </label>
+                <label id="filtro-contraste" for="slider.contrast"> CONTRASTE </label>
             </br>
                 <input id="slider.contrast" type="range" min="100" max="1000" value="100"> 
             </div>
             <div class="panel-control-slider">
-                <label for="slider-blur"> DESENFOQUE </label>
+                <label id="filtro-desenfoque" for="slider-blur"> DESENFOQUE </label>
             </br>
                 <input id="slider-blur" type="range" min="0" max="10" value="0" step="0.1"> 
             </div>
             <div class="panel-control-slider">
-                <label for="slider-grayscale"> ESCALA DE GRISES </label>
+                <label id="filtro-grises" for="slider-grayscale"> ESCALA DE GRISES </label>
             </br>
                 <input id="slider-grayscale" type="range" min="0" max="100" value="0"> 
             </div>
             <div class="panel-control-slider">
-                <label for="slider-sepia"> SEPIA </label>
+                <label id="filtro-sepia" for="slider-sepia"> SEPIA </label>
             </br>
                 <input id="slider-sepia" type="range" min="0" max="100" value="0"> 
             </div>
             <div class="panel-control-slider">
-                <label for="slider-hue"> HUE </label>
+                <label id="filtro-hue" for="slider-hue"> HUE </label>
             </br>
                 <input id="slider-hue" type="range" min="0" max="360" value="0">
             </div>
             <div class="panel-control-slider">
-                <label for="slider-saturate"> SATURADO </label>
+                <label id="filtro-saturado"  for="slider-saturate"> SATURADO </label>
             </br>
                 <input id="slider-saturate" type="range" min="100" max="1000" value="100" step="10">
                 <div class="panel-control-slider"> 
-                    <label for="slider-invert"> NEGATIVO </label>
+                    <label id="filtro-negativo" for="slider-invert"> NEGATIVO </label>
                 </br>
                     <input id="slider-invert" type="range" min="0" max="1" value="0" step="0.1">
                 </div>
         </div>
         <button id="button-filters" class="button-filters"> Restablecer filtros </button>
     </aside>
-    <aside id="panel" class="panel-hidden2"> 
+    <aside id="aside-text" class="panel-hidden2"> 
         <h2 class="title-panel"> TEXTO </h2>
         <div class="panel-control"> 
             <h3 class="title-panel"> SUPERIOR </h3>
