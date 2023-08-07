@@ -30,6 +30,14 @@ const filtroSepia = document.getElementById("filtro-sepia");
 const filtroHue = document.getElementById("filtro-hue");
 const filtroSaturado = document.getElementById("filtro-saturado");
 const filtroNegativo = document.getElementById("filtro-negativo");
+const text = document.getElementById("no-toptext");
+const textBottom = document.getElementById("no-bottomtext");
+const tittleColor = document.getElementById("tittle-color");
+const colorBack = document.getElementById("color-background");
+
+const cambiarModo = () => {
+   aside.classList.toggle("light-aside")
+}
 
 //const aside = document.getElementById ('panel');
 //const textAside = document.getElementById ('panel'); //
@@ -39,14 +47,14 @@ const filtroNegativo = document.getElementById("filtro-negativo");
 //const textAside = document.getElementById("panel-hidden");
 
 
-//const urlImg = document.getElementById ('url-img-input')
-//const memeImg = document.getElementById('container-meme')
-//UrlImgInput.addEventListener('input', (e)=> changeBackground(e))
+const urlImg = document.getElementById ("url-img-input")
+const memeImg = document.getElementById("container-meme")
+UrlImgInput.addEventListener('input', (e)=> changeBackground(e))
 
-//const changeBackground =(e) => { 
-    //console.log(e.target.value)
-    //memeImg.style.backgroundImage = `url(' ${e.target.value}')`
-//} 
+const changeBackground = (e) => { 
+    console.log(e.target.value)
+    memeImg.style.backgroundImage = `url(' ${e.target.value}')`
+} 
 
 //const button = document.getElementById("mood-button")
 //const mainContainer = document.getElementById('main-container')

@@ -144,5 +144,8 @@
 }
 .panel-control-input {
     font-family: Arial, Helvetica, sans-serif;
-
+}
+.light-aside { 
+    background-color: aqua;
+    color: aqua;
 }
