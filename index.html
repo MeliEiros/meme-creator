@@ -19,9 +19,9 @@
      <main id="main-container" class="container-meme"> 
         <div class="meme-img"  id="meme-container" style="height: 600px;">
         <!--<div id="text-img" class="img-text"> TOP TEXT </div> -->
-        <div class="top-text"> <p class="text-top"> TOP TEXT </p> </div>
+        <div class="top-text" id="top-text-container"> <p class="text-top" id="texto-arriba"> TOP TEXT </p> </div>
         <div class="imagen" id="container-meme"> </div>
-        <div class="bottom-text"> <p class="text-bottom"> BOTTOM TEXT</p>  </div>
+        <div class="bottom-text" id="bottom-text-container"> <p class="text-bottom" id="texto-bajo"> BOTTOM TEXT</p>  </div>
         </div>
     </main>
 
@@ -127,9 +127,10 @@
             <div class="panel-control-color">
                  <div> <h3 id="tittle-color" class="panel-control-title"> COLOR </h3>
                  <input id="text-color-input" class="color-input" name="color texto" type="color" value="#000000"> </div>
-                <div> <h3 id="color-background" class="panel-control-title"> FONDO </h3>
+                <div id="color-background"> <h3 class="panel-control-title"> FONDO </h3>
                 <input id="backgroundcolor-text" class="color-input" name="color de fondo" type="color" value="#FFFFFF"> </div> 
-
+                <span id="color-name">
+                </span>
             </div>
             <div class="panel-control">
                 <h3 class="panel-control-title"> CONTORNO </h3>

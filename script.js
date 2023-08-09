@@ -48,7 +48,7 @@ const cambiarMood = () => {
 if (main.classList.contains("main-light")) {
    buttonMood.innerHTML = '<i class="fa-solid fa-lightbulb"></i> Modo oscuro';
 } else { 
-   buttonMood.innerHTML = '<i class="fa-solid fa-lightbulb"></i> Modo claro';
+   buttonMood.innerHTML = '<i class="fa-solid fa-lightbulb"></i> Modo oscuro';
    ;
 }
 
@@ -64,13 +64,66 @@ const changeBackground = (e) => {
     memeImg.style.backgroundImage = `url(' ${e.target.value}')`
 } 
 
-//const descargarMeme = document.getElementById("download");
-//const meme = document.getElementById("meme-container");
-//descargarMeme.addEventListener("click" , () => descargar()); 
+//Descarga// 
+const descargarMeme = document.getElementById("download");
+const containerMeme= document.getElementById("meme-container");
+descargarMeme.addEventListener("click" , () => descargar()); 
 
-//const descargar = () => { 
-   //domtoimage.toBlob(meme).then(function (blob) {
-      //window.saveAs(blob, "meme.png");
-      //});
-  //};
+const descargar = () => { 
+   domtoimage.toBlob(meme).then(function (blob) {
+      window.saveAs(blob, "meme.png");
+      });
+  };
 
+  //Fondo
+  //const fondoMeme = document.getElementById("backgroundcolor-text");
+  //const colorMeme = document.getElementById("color-name");
+
+  //const memeColor = () => { 
+   //let color = colorImg.value;
+   //colorMeme.innerHTML = `${colorElegido}`;
+//};
+   
+//fondoMeme.addEventListener("input" , () => { 
+  // memeImg.style.backgroundColor = `${colorImg.value}`;
+    
+//})
+
+//colorImg.addEventListener("input" , () => memeColor ());
+
+const brilloInput = document.getElementById("brightness-slider");
+const opacidadInput = document.getElementById("slider-opacity");
+const contrasteInput =document.getElementById("slider.contrast");
+const desenfoqueInput =document.getElementById("slider-blur");
+const grisesInput =document.getElementById("slider-grayscale");
+const sepiaInput =document.getElementById("slider-sepia");
+const hueInput =document.getElementById("slider-hue");
+const saturadoInput =document.getElementById("slider-saturate");
+const negativoInput =document.getElementById("slider-invert");
+
+const filtros = () => {
+   containerMeme.style.filter = `brightness (${brilloInput.value}) opacity(${opacidadInput.value}) contrast(${contrasteInput.value}%) blur(${desenfoqueInputInput.value}px) grayscale(${grisesInput.value}%) sepia(${sepiaInput.value}%) hue(${hueInput.value}deg) saturate(${saturadoInput.value}%) invert(${negativoInput.value})`;
+};
+
+brilloInput.addEventListener("input", () => filters());
+opacidadInput.addEventListener("input", () => filters());
+contrasteInput.addEventListener("input", () => filters());
+desenfoqueInput.addEventListener("input", () => filters());
+grisesInput.addEventListener("input", () => filters());
+sepiaInput.addEventListener("input", () => filters());
+hueInput.addEventListener("input", () => filters());
+saturadoInput.addEventListener("input", () => filters());
+negativoInput.addEventListener("input", () => filters());
+
+
+   
+//const topText =document.getElementById("top-text-container");
+//const  bottomText =document.getElementById("bottom-text-container");
+//const textoArriba =document.getElementById("texto-arriba");
+//const textoAbajo =document.getElementById("texto-bajo");
+//textoArriba.addEventListener("input" , () => { 
+   //topText.innerHTML = `<p>${textoArriba.value}</p>`;
+//})
+ //textoAbajo.addEventListener("input" , () => { 
+  // bottomText.innerHTML = `<p>${textoAbajo.value}</p>`;
+//})
