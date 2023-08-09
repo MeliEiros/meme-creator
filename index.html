@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css"> 
     <script src="https://kit.fontawesome.com/feae6c3d99.js" crossorigin="anonymous"></script>
     </head>
-<header id="header-container">
-      <h1 class="title"> GENERADOR DE MEMES </h1>
+<header id="header-container" class="header-container">
+      <h1 class="title"> Generador de memes </h1>
      <div class="three-buttons"> 
        <div class="img-b"> <button id="img-button"  class="button-img"> <i class="fa-solid fa-file-image"></i> Imagen </button> </div>
         <div class="boton"> <button id="text-button" class="button-text"> <i class="fa-solid fa-font"></i> Texto </button> </div>
@@ -17,15 +17,19 @@
 </header>
 <body id="body-light">
      <main id="main-container" class="container-meme"> 
-        <div class="meme-img" style="height: 600px;">
+        <div class="meme-img"  id="meme-container" style="height: 600px;">
         <!--<div id="text-img" class="img-text"> TOP TEXT </div> -->
         <div class="top-text"> <p class="text-top"> TOP TEXT </p> </div>
         <div class="imagen" id="container-meme"> </div>
         <div class="bottom-text"> <p class="text-bottom"> BOTTOM TEXT</p>  </div>
         </div>
+    </main>
 
-
-     </main>
+     <div class="descarga">
+        <button class="meme-descargar" id="download">
+            <i class="fa-solid fa-download"></i>
+        </button>
+     </div>
     <aside id="aside-img" class="panel-hidden"> 
         <h2 class="panel-title"> IMAGEN </h2>
         <div class="control-panel"> 

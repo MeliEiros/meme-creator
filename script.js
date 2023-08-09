@@ -34,11 +34,25 @@ const textBottom = document.getElementById("no-bottomtext");
 const tittleColor = document.getElementById("tittle-color");
 const colorBack = document.getElementById("color-background");
 
-const cambiarModo = () => {
+const cambiarMood = () => {
    aside.classList.toggle("light-aside");
    asideText.classList.toggle("light-aside");
+   main.classList.toggle("main-light");
+   header.classList.toggle("header-light");
+   body.classList.toggle("body-light");
+   buttonImg.classList.toggle("buttons");
+   textBottom.classList.toggle("buttons");
+   buttonMood.classList.toggle("buttons");
 }
 
+if (main.classList.contains("main-light")) {
+   buttonMood.innerHTML = '<i class="fa-solid fa-lightbulb"></i> Modo oscuro';
+} else { 
+   buttonMood.innerHTML = '<i class="fa-solid fa-lightbulb"></i> Modo claro';
+   ;
+}
+
+buttonMood.addEventListener("click" , () => cambiarMood());
 
 
 const urlImg = document.getElementById ("url-img-input")
@@ -50,6 +64,13 @@ const changeBackground = (e) => {
     memeImg.style.backgroundImage = `url(' ${e.target.value}')`
 } 
 
-//const button = document.getElementById("mood-button")
-//const mainContainer = document.getElementById('main-container')
-//const headerContainer = document.getElementById('header-container')
+//const descargarMeme = document.getElementById("download");
+//const meme = document.getElementById("meme-container");
+//descargarMeme.addEventListener("click" , () => descargar()); 
+
+//const descargar = () => { 
+   //domtoimage.toBlob(meme).then(function (blob) {
+      //window.saveAs(blob, "meme.png");
+      //});
+  //};
+
