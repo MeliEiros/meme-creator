@@ -102,7 +102,7 @@ const saturadoInput =document.getElementById("slider-saturate");
 const negativoInput =document.getElementById("slider-invert");
 
 const filtros = () => {
-   containerMeme.style.filtros = `brightness (${brilloInput.value}) opacity(${opacidadInput.value}) contrast(${contrasteInput.value}%) blur(${desenfoqueInputInput.value}px) grayscale(${grisesInput.value}%) sepia(${sepiaInput.value}%) hue(${hueInput.value}deg) saturate(${saturadoInput.value}%) invert(${negativoInput.value})`;
+   memeImg.style.filter = `brightness(${brilloInput.value}) opacity(${opacidadInput.value}) contrast(${contrasteInput.value}%) blur(${desenfoqueInput.value}px) grayscale(${grisesInput.value}%) sepia(${sepiaInput.value}%) hue-rotate(${hueInput.value}deg) saturate(${saturadoInput.value}%) invert(${negativoInput.value})`;
 };
 
 brilloInput.addEventListener("input", () => filtros());
