@@ -76,20 +76,22 @@ const descargar = () => {
   };
 
   //Fondo
-  //const fondoMeme = document.getElementById("backgroundcolor-text");
-  //const colorMeme = document.getElementById("color-name");
+  const fondoMeme = document.getElementById("meme-container");
+  const colorMeme = document.getElementById("color-name");
 
-  //const memeColor = () => { 
-   //let color = colorImg.value;
-   //colorMeme.innerHTML = `${colorElegido}`;
-//};
+  const memeColor = () => { 
+   let color = fondoMeme.value;
+   colorMeme.innerHTML = `${colorElegido}`;
+};
    
-//fondoMeme.addEventListener("input" , () => { 
-  // memeImg.style.backgroundColor = `${colorImg.value}`;
+fondoMeme.addEventListener("input" , () => { 
+   memeImg.style.backgroundColor = `${fondoMeme.value}`;
     
-//})
+})
 
-//colorImg.addEventListener("input" , () => memeColor ());
+fondoMeme.addEventListener("input" , () => memeColor ());
+
+
 
 const brilloInput = document.getElementById("brightness-slider");
 const opacidadInput = document.getElementById("slider-opacity");
