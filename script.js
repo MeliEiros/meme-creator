@@ -116,6 +116,14 @@ saturadoInput.addEventListener("input", () => filtros());
 negativoInput.addEventListener("input", () => filtros());
 
 
+const resetfiltros = document.getElementById("button-filters");
+
+resetfiltros.addEventListener("click" , () => resetear());
+const resetear = () => { 
+   memeImg.style.filter = `brightness(${brilloInput.value = 1}) opacity(${opacidadInput.value = 1}) contrast(${contrasteInput.value = 100}%) blur(${desenfoqueInput.value = 0}px) grayscale(${grisesInput.value = 0}%) sepia(${sepiaInput.value = 0}%) hue-rotate(${hueInput.value = 0}deg) saturate(${saturadoInput.value = 100}%) invert(${negativoInput.value = 0})`;
+   }
+
+
    
 //const topText =document.getElementById("top-text-container");
 //const  bottomText =document.getElementById("bottom-text-container");
