@@ -20,15 +20,15 @@ const buttonMood = document.getElementById("mood-button");
 const main = document.getElementById("main-container");
 const header = document.getElementById("header-container");
 const body = document.getElementById("body-light");
-const filtroBrillo = document.getElementById("filtro-brillo");
-const filtroOpac = document.getElementById("filtro-opac"); 
-const filtroContraste = document.getElementById("filtro-contraste");
-const filtroDesenfoque = document.getElementById("filtro-desenfoque");
-const filtroGrises = document.getElementById("filtro-grises");
-const filtroSepia = document.getElementById("filtro-sepia");
-const filtroHue = document.getElementById("filtro-hue");
-const filtroSaturado = document.getElementById("filtro-saturado");
-const filtroNegativo = document.getElementById("filtro-negativo");
+const filtroBrillo = document.getElementById("brightness-slider");
+const filtroOpac = document.getElementById("slider-opacity"); 
+const filtroContraste = document.getElementById("slider-contrast");
+const filtroDesenfoque = document.getElementById("slider-blur");
+const filtroGrises = document.getElementById("slider-grayscale");
+const filtroSepia = document.getElementById("slider-sepia");
+const filtroHue = document.getElementById("slider-hue");
+const filtroSaturado = document.getElementById("slider-saturate");
+const filtroNegativo = document.getElementById("slider-invert");
 const text = document.getElementById("no-toptext");
 const textBottom = document.getElementById("no-bottomtext");
 const tittleColor = document.getElementById("tittle-color");
@@ -93,7 +93,7 @@ const descargar = () => {
 
 const brilloInput = document.getElementById("brightness-slider");
 const opacidadInput = document.getElementById("slider-opacity");
-const contrasteInput =document.getElementById("slider.contrast");
+const contrasteInput =document.getElementById("slider-contrast");
 const desenfoqueInput =document.getElementById("slider-blur");
 const grisesInput =document.getElementById("slider-grayscale");
 const sepiaInput =document.getElementById("slider-sepia");
@@ -102,18 +102,18 @@ const saturadoInput =document.getElementById("slider-saturate");
 const negativoInput =document.getElementById("slider-invert");
 
 const filtros = () => {
-   containerMeme.style.filter = `brightness (${brilloInput.value}) opacity(${opacidadInput.value}) contrast(${contrasteInput.value}%) blur(${desenfoqueInputInput.value}px) grayscale(${grisesInput.value}%) sepia(${sepiaInput.value}%) hue(${hueInput.value}deg) saturate(${saturadoInput.value}%) invert(${negativoInput.value})`;
+   containerMeme.style.filtros = `brightness (${brilloInput.value}) opacity(${opacidadInput.value}) contrast(${contrasteInput.value}%) blur(${desenfoqueInputInput.value}px) grayscale(${grisesInput.value}%) sepia(${sepiaInput.value}%) hue(${hueInput.value}deg) saturate(${saturadoInput.value}%) invert(${negativoInput.value})`;
 };
 
-brilloInput.addEventListener("input", () => filters());
-opacidadInput.addEventListener("input", () => filters());
-contrasteInput.addEventListener("input", () => filters());
-desenfoqueInput.addEventListener("input", () => filters());
-grisesInput.addEventListener("input", () => filters());
-sepiaInput.addEventListener("input", () => filters());
-hueInput.addEventListener("input", () => filters());
-saturadoInput.addEventListener("input", () => filters());
-negativoInput.addEventListener("input", () => filters());
+brilloInput.addEventListener("input", () => filtros());
+opacidadInput.addEventListener("input", () => filtros());
+contrasteInput.addEventListener("input", () => filtros());
+desenfoqueInput.addEventListener("input", () => filtros());
+grisesInput.addEventListener("input", () => filtros());
+sepiaInput.addEventListener("input", () => filtros());
+hueInput.addEventListener("input", () => filtros());
+saturadoInput.addEventListener("input", () => filtros());
+negativoInput.addEventListener("input", () => filtros());
 
 
    
