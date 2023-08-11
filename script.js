@@ -70,8 +70,8 @@ const containerMeme= document.getElementById("meme-container");
 descargarMeme.addEventListener("click" , () => descargar()); 
 
 const descargar = () => { 
-   domtoimage.toBlob(meme).then(function (blob) {
-      window.saveAs(blob, "meme.png");
+   domtoimage.toBlob(containerMeme).then((blob) => {
+   saveAs(blob, "meme.png");
       });
   };
 
@@ -127,13 +127,13 @@ const resetear = () => {
 
 
    
-//const topText =document.getElementById("top-text-container");
-//const  bottomText =document.getElementById("bottom-text-container");
-//const textoArriba =document.getElementById("texto-arriba");
-//const textoAbajo =document.getElementById("texto-bajo");
-//textoArriba.addEventListener("input" , () => { 
-   //topText.innerHTML = `<p>${textoArriba.value}</p>`;
-//})
- //textoAbajo.addEventListener("input" , () => { 
-  // bottomText.innerHTML = `<p>${textoAbajo.value}</p>`;
-//})
+const topText =document.getElementById("top-text-container");
+const  bottomText =document.getElementById("bottom-text-container");
+const textoArriba =document.getElementById("texto-arriba");
+const textoAbajo =document.getElementById("texto-bajo");
+textoArriba.addEventListener("input" , () => { 
+   topText.innerHTML = `<p>${textoArriba.value}</p>`;
+})
+ textoAbajo.addEventListener("input" , () => { 
+  bottomText.innerHTML = `<p>${textoAbajo.value}</p>`;
+})
