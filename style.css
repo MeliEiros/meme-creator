@@ -101,7 +101,6 @@
     background-color: black;
     color: white;
     width:220px;
-    display: block;
     float: inline-end;
     overflow: auto;
     position: fixed;
@@ -112,7 +111,6 @@
     background-color: black;
     color: white;
     width:220px;
-    display: block;
     float: inline-end;
     overflow: auto;
     position: fixed;

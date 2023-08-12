@@ -5,16 +5,16 @@ const buttonText = document.getElementById("img-button");
  const asideText =document.getElementById("aside-text");
 
  const textHide = () => {
-    aside.classList.add("panel-hidden");
-    asideText.classList.remove("panel-hidden2");
+    aside.classList.add("hidden");
+    asideText.classList.remove("hidden");
  }
  const imgHide = () => { 
-    asideText.classList.add("panel-hidden2");
-    aside.classList.remove("panel-hidden");
+    asideText.classList.add("hidden");
+    aside.classList.remove("hidden");
     
  }
-buttonText.addEventListener("click" , () => textHide());
-buttonImg.addEventListener("click" , () => imgHide());
+buttonText.addEventListener("click" , () => imgHide());
+buttonImg.addEventListener("click" , () => textHide());
 
 const buttonMood = document.getElementById("mood-button");
 const main = document.getElementById("main-container");
@@ -131,9 +131,12 @@ const topText =document.getElementById("top-text-container");
 const  bottomText =document.getElementById("bottom-text-container");
 const textoArriba =document.getElementById("texto-arriba");
 const textoAbajo =document.getElementById("texto-bajo");
-textoArriba.addEventListener("input" , () => { 
-   topText.innerHTML = `<p>${textoArriba.value}</p>`;
-})
- textoAbajo.addEventListener("input" , () => { 
-  bottomText.innerHTML = `<p>${textoAbajo.value}</p>`;
-})
+const topTextInput =document.getElementById("top-text-input");
+const bottonTextInput =document.getElementById("text-bottom-input");
+topTextInput.addEventListener("input" , () => { 
+   textoArriba.innerHTML = topTextInput.value;
+});
+
+ bottonTextInput.addEventListener("input" , () => { 
+  textoAbajo.innerHTML = bottonTextInput.value;
+});
